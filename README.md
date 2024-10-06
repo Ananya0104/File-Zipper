@@ -66,7 +66,6 @@ Huffman Coding prevents any ambiguity in the decoding process using the concept 
 
 ![image](https://user-images.githubusercontent.com/22562694/120909576-edf9df00-c693-11eb-8d05-eb837d93a3c0.png)
 
-Assign 0 to the left edge and 1 to the right edge
 
 For sending the above string over a network, we have to send the tree as well as the above compressed-code. The total size is given by the table below.
 
