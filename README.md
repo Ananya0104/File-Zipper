@@ -1,4 +1,4 @@
-# File-Zipper using Huffman-Coding
+# HuffCompress using Huffman-Coding
 
 Huffman Coding (HC) is a technique of Compressing data to reduce its size without losing any of the details. David Huffman first developed it.
 
