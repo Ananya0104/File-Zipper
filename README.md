@@ -4,9 +4,9 @@ Huffman Coding (HC) is a technique of Compressing data to reduce its size withou
 
 HC is generally useful to compress the data in which there are frequently occurring characters.
 
-## Testing Running the Program
+## Testing / Running the Program
 
-1. **Clone the above repository.**
+1. **Save / Clone the repository.**
    - The repository consists of a sample text file of size 715kB.
 
 2. **Run the Python code `useHuffman.py` to compress & decompress the given sample file.**
@@ -14,10 +14,12 @@ HC is generally useful to compress the data in which there are frequently occurr
      ```sh
      python3 useHuffman.py
      ```
-
-3. **Compression and Decompression**
    - The above command will perform compression and decompression on the `sample.txt` file present in the repository.
    - Both the compressed and decompressed files will be present at the same location.
+
+3. **To run the code for compression of any other text file:**
+   - Edit the `path` variable in the `useHuffman.py` file to point to the desired text file.
+
 
 
 ## Huffman Coding algorithm
