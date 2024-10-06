@@ -21,7 +21,6 @@ return rootNode
 Suppose the string below is to be sent over a network.
 
 ![image](https://user-images.githubusercontent.com/22562694/120909515-6c09b600-c693-11eb-8a4c-1c2c2ad2537f.png)
-Initial string
 
 Each character occupies 8 bits. There are a total of 15 characters in the above string. Thus, a total of 8 * 15 = 120 bits are required to send this string.
 
@@ -38,19 +37,16 @@ Huffman Coding prevents any ambiguity in the decoding process using the concept 
 1.Calculate the frequency of each character in the string.
 
 ![image](https://user-images.githubusercontent.com/22562694/120909529-893e8480-c693-11eb-87ae-20c9c6705d6d.png)
-Frequency of string
 
 2.Sort the characters in increasing order of the frequency. These are stored in a priority queue Q.
 
 ![image](https://user-images.githubusercontent.com/22562694/120909537-9a879100-c693-11eb-937f-9b4870c88d6d.png)
-Characters sorted according to the frequency
 
 3.Make each unique character as a leaf node.
 
 4.Create an empty node z. Assign the minimum frequency to the left child of z and assign the second minimum frequency to the right child of z. Set the value of the z as the sum of the above two minimum frequencies.
 
 ![image](https://user-images.githubusercontent.com/22562694/120909559-bc811380-c693-11eb-85a6-597f9bd4e328.png)
-Getting the sum of the Least numbers
 
 5.Remove these two minimum frequencies from Q and add the sum into the list of frequencies (* denote the internal nodes in the figure above).
 
