@@ -6,16 +6,16 @@ HC is generally useful to compress the data in which there are frequently occurr
 
 ## Huffman Coding algorithm
 
-Create a Priority Queue Q consisting of each unique character.
-Sort then in ascending order of their frequencies.
-for all the unique characters:
-    Create a newNode
-    extract minimum value from Q and assign it to leftChild of newNode
-    extract minimum value from Q and assign it to rightChild of newNode
-    calculate the sum of these two minimum values and assign it to the value of newNode
-    insert this newNode into the tree
-    
-return rootNode
+1. **Create a Priority Queue `Q` consisting of each unique character.**
+2. **Sort them in ascending order of their frequencies.**
+3. **For all the unique characters:**
+   - Create a `newNode`.
+   - Extract the minimum value from `Q` and assign it to `leftChild` of `newNode`.
+   - Extract the minimum value from `Q` and assign it to `rightChild` of `newNode`.
+   - Calculate the sum of these two minimum values and assign it to the value of `newNode`.
+   - Insert this `newNode` into the tree.
+
+4. **Return `rootNode`.**
 
 ## How Huffman Coding works?
 Suppose the string below is to be sent over a network.
