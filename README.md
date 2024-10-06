@@ -34,25 +34,25 @@ Huffman Coding prevents any ambiguity in the decoding process using the concept 
 
 ## In depth Explaination
 
-1.Calculate the frequency of each character in the string.
+1. Calculate the frequency of each character in the string.
 
 ![image](https://user-images.githubusercontent.com/22562694/120909529-893e8480-c693-11eb-87ae-20c9c6705d6d.png)
 
-2.Sort the characters in increasing order of the frequency. These are stored in a priority queue Q.
+2. Sort the characters in increasing order of the frequency. These are stored in a priority queue Q.
 
 ![image](https://user-images.githubusercontent.com/22562694/120909537-9a879100-c693-11eb-937f-9b4870c88d6d.png)
 
-3.Make each unique character as a leaf node.
+3. Make each unique character as a leaf node.
 
-4.Create an empty node z. Assign the minimum frequency to the left child of z and assign the second minimum frequency to the right child of z. Set the value of the z as the sum of the above two minimum frequencies.
+4. Create an empty node z. Assign the minimum frequency to the left child of z and assign the second minimum frequency to the right child of z. Set the value of the z as the sum of the above two minimum frequencies.
 
 ![image](https://user-images.githubusercontent.com/22562694/120909559-bc811380-c693-11eb-85a6-597f9bd4e328.png)
 
-5.Remove these two minimum frequencies from Q and add the sum into the list of frequencies (* denote the internal nodes in the figure above).
+5. Remove these two minimum frequencies from Q and add the sum into the list of frequencies (* denote the internal nodes in the figure above).
 
-6.Insert node z into the tree.
+6. Insert node z into the tree.
 
-7.Repeat steps 3 to 5 for all the characters.
+7. Repeat steps 3 to 5 for all the characters.
 
 ![image](https://user-images.githubusercontent.com/22562694/120909564-d1f63d80-c693-11eb-8e6a-681dc5c09441.png)
 
@@ -62,7 +62,7 @@ Huffman Coding prevents any ambiguity in the decoding process using the concept 
 
 
 
-8.For each non-leaf node, assign 0 to the left edge and 1 to the right edge.
+8. For each non-leaf node, assign 0 to the left edge and 1 to the right edge.
 
 ![image](https://user-images.githubusercontent.com/22562694/120909576-edf9df00-c693-11eb-8d05-eb837d93a3c0.png)
 
